@@ -1,0 +1,29 @@
+@import "design";
+
+.interface {
+	text-align: center;
+	font-family: $landing-font;
+	.special {
+		color: #d3d3d3;
+		margin-top: -8px;
+
+	}
+	img {
+		height:600px;
+		margin: 0 auto;
+	}
+
+	.blue {
+		color: blue;
+	}
+
+	.logo {
+		height: 80px;
+		width: 80px;
+	}
+
+	.happy {
+		text-align: center;
+	}
+
+}

@@ -1,0 +1,14 @@
+.photo {
+	display: block;
+	border: black solid 5px;
+	margin: 20px;
+}
+
+.photo img {
+	max-width: 100%;
+
+}
+
+body {
+	background: red;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>I'm the map!</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">	
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaVkUzyiz7reNV9IWpxp1mSEPTosj1tA8"></script>	
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+			map = new google.maps.Map(document.getElementById("map-canvas"), {
+				zoom: 16
+			});
+			
+			google.maps.event.addListener(map, 'click', function(event){
+				searchPhotos(event.latLng);
+			});
+
+			navigator.geolocation.getCurrentPosition(function(position) {
+				searchPhotos(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
+			});
+
+		});
+				function searchPhotos(location){
+			var client_id = "b9d691f117e8402d9bac3829d5ef97be",
+							openInfoWindow;
+console.log("https://api.instagram.com/v1/media/search?distance=100&lat=" + location.lat() + "&lng=" + location.lng() + "&client_id=" + client_id)
+			$.ajax({
+				type: "GET",
+				dataType: "jsonp",
+				cache: false,
+				url: "https://api.instagram.com/v1/media/search?distance=100&lat=" + location.lat() + "&lng=" + location.lng() + "&client_id=" + client_id,
+				success: function(photos){
+					console.log(photos.meta)
+					photos.data.forEach(function(photo){
+						var photoLocation = new google.maps.LatLng(photo.location.latitude,photo.location.longitude);
+						var photoMarker = new google.maps.Marker({
+							position: photoLocation,
+							map: map
+						});
+						var infowindow = new google.maps.InfoWindow({
+							content: "<img src='" + photo.images.low_resolution.url + "' />"
+						});
+						google.maps.event.addListener(photoMarker,'click',function(){
+							if(openInfowindow){
+								openInfowindow.close();
+							}
+							openInfoWindow = infowindow;
+							infowindow.open(map,photoMarker);
+						});
+					});
+				},
+				error: function(){
+					alert('its broke');
+				}
+			});
+			map.setCenter(location);
+		}
+
+	</script>
+	<style type="text/css">
+		body,html{height:100%;margin:0;padding:0;}
+		#map-cavas{height:100%;}
+	</style>
+</head>
+<body>
+	<div id='map-canvas'></div>
+</body>
+</html>

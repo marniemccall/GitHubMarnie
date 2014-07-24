@@ -1,0 +1,27 @@
+@import "design";
+
+.landing {
+	background-image:url("../images/overview_hero_bg.jpg");
+	height:600px;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	img {
+		margin: 0 auto;
+	}
+	h1 {
+		color: $font-color;
+		text-align: center;
+		font-family: $landing-font;
+	}
+
+	.landing-text {
+		font-size: 26px;
+
+	}
+	p {
+		text-align: center;
+			color: $font-color;
+			font-family: $landing-font;
+	}
+}

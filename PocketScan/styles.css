@@ -1,0 +1,188 @@
+body {
+	color:#2bde73;
+}
+
+.name {
+	font-weight: bold;
+	color: #35a068;
+	text-transform: uppercase;
+}
+
+.margin-space {
+	margin-top: 52px;
+}
+
+
+/**************************************
+NAV BAR
+**************************************/
+.navbar-default .navbar-nav > li > a:hover {
+	color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #2bde73;
+	text-transform: uppercase;
+}
+
+.navbar-default {
+	background: rgba(250, 250, 250, 0.3);
+}
+
+
+
+/**************************************
+MODAL
+**************************************/
+#order {
+	color: black;
+}
+
+#order:hover {
+	background-color: white;
+}
+
+.orderform {
+	width: 400px;
+	margin: 0 auto 25px auto;
+}
+
+
+
+/**************************************
+VIDEO
+**************************************/
+.video {
+	margin: 20px 0 50px 0;
+}
+
+.video-container {
+	background: white;
+	margin-top: 52px;
+}
+
+
+
+/**************************************
+ABOUT
+**************************************/
+.about-container {
+	padding: 50px 0;
+	background-color: black
+}
+
+.description {
+	color: white;
+}
+
+.img-responsive, .thumbnail>img, .thumbnail a>img, .carousel-inner>.item>img, .carousel-inner>.item>a>img {
+	width: 100%;
+	height: 500px;
+}
+
+.carousel-container {
+	margin: 20px 0;
+}
+
+.brand {
+	text-transform: lowercase;
+}
+
+
+
+/**************************************
+APPLICATION
+**************************************/
+.application-background {
+	padding: 50px 0;
+}
+
+.pics {
+	margin: 20px 0 0 0;
+}
+
+.application-description {
+	color: black;
+}
+
+
+
+/**************************************
+TECH SPECS
+**************************************/
+.tech-background {
+	background-color: black;
+	padding: 50px 0;
+}
+
+.specpic {
+	width: 100%;
+}
+
+
+
+/**************************************
+MEET THE TEAM
+**************************************/
+h2 {
+	text-align: center;
+	margin: 0 0 30px 0;
+	text-transform: uppercase;
+}
+.teampic {
+	max-width: 100%;
+}
+
+.face {
+	border-radius: 50%;
+}
+
+.member {
+	margin-top: 30px;
+	background: rgba(250, 250, 250, 0.7);
+	padding: 15px;
+	color: black;
+}
+
+@media (min-width: 768px) {
+	.member .face {
+		float: left;
+	}
+
+	.member:nth-of-type(2n) .face {
+		float: right;
+	}
+}
+
+.team-background {
+	background-color: white;
+	padding: 50px 0;
+}
+
+.borderonly {
+	border: 2px black solid;
+}
+
+
+
+/**************************************
+FAQ
+**************************************/
+.faq-background {
+	background-color: black;
+	padding: 50px 0;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+
+
+
+
+
+
+
+
+

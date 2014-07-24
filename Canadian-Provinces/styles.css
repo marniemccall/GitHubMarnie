@@ -1,0 +1,109 @@
+/************************************
+Main Page
+************************************/
+
+body {
+	font-family: sans-serif;
+}
+
+.header {
+	background: url(http://upload.wikimedia.org/wikipedia/commons/f/fe/Geopolitical_map_of_Canada.png);
+	background-size: cover;
+	height: 500px;
+	width: 100%;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+.logo {
+	height: 100px;
+	display: inline-block;
+}
+
+.header.clearfix {
+	display: inline-block;
+	border: 5px solid black;
+}
+
+.province-wrapper {
+	display: inline-block;
+	position: relative;
+	width: 32%;
+	text-align: center;
+	margin: 2px;
+}
+
+.province-logo-wrapper {
+	margin: 0 auto;
+	width: 500px;
+	padding-top: 150px;
+}
+
+
+
+/************************************
+Images
+************************************/
+
+img.inline {
+	width: 150px;
+	padding: 5px;
+	border: 1px solid #333;
+	background: #CCC;
+}
+
+img.inline.left {
+	float: left;
+	margin: 0 15px 0 0;
+}
+
+img.inline.right {
+	float: right;
+	margin: 0 0 0 15px;
+}
+
+
+
+/************************************
+Pages
+************************************/
+
+h1 {
+	line-height: 100px;
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+	color: white;
+	margin-top: -45px;
+	font-size: 15px;
+}
+
+.PEI {
+	background: url(http://upload.wikimedia.org/wikipedia/commons/e/eb/Prince_edward_island_cavendish_red_cliffs.JPG);
+	background-size: cover;
+}
+
+.manitoba {
+	background: url(http://upload.wikimedia.org/wikipedia/commons/5/57/Clay_banks.jpg);
+	background-size: cover;
+}
+
+.ontario {
+	background: url(http://upload.wikimedia.org/wikipedia/commons/e/ef/Escarpment_at_Bruce_Peninsula.JPG);
+	background-size: cover;
+}
+

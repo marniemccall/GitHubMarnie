@@ -1,0 +1,33 @@
+body{
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+}
+
+.about {
+	margin: 30px;
+}
+
+img {
+	width: 289px;
+	margin-top: 30px;
+}
+
+.Border {
+	border: 1px solid black;
+}
+
+h3 {
+	text-align: left;
+}
+
+.row {
+	padding-bottom: 20px;
+}
+
+.space {
+	margin: 10px 0 10px 0;
+	padding: 10px 0 10px 0;
+}

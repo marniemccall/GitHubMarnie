@@ -1,0 +1,164 @@
+/***********************************************
+EVERY PAGE
+***********************************************/
+
+body {
+	background-color: red;
+	font-family: 'Permanent Marker';
+
+}
+
+.HeaderImage {
+	margin-top: 1em;
+	border: 5px black solid;
+}
+
+.nav {
+	background-color: white;
+
+}
+
+.main {
+	background-color: rgba(0,0,0,0.5);
+	margin-top: 1em;
+}
+
+li {
+	border: 5px black solid;
+
+}
+
+
+
+/***********************************************
+HOME PAGE
+***********************************************/
+
+.MainBody {
+	background-color: white;
+	border: 5px solid black;
+}
+
+.BodyImage {
+	background-image: url("Images/Tacos.jpg");
+	height: 900px;
+	background-size: cover;
+	
+}
+
+.description {
+	color: yellow;
+	font-size: 2em;
+	text-align: center;
+}
+
+
+
+/***********************************************
+CONTACT US
+***********************************************/
+
+.map {
+	border: 5px black solid;
+	height: 4s00px;
+}
+
+address {
+	font-size: 1.5em;
+}
+
+iframe {
+	width: 100%;
+	height: 100%;
+}
+
+.MapAndAddress {
+	margin-top: 20px;
+}
+
+.logo {
+	height: 75px;
+	width: 75px;
+	border: 5px solid black;
+}
+
+.footer {
+	margin: 1em 0;
+}
+
+
+.mappy {
+	height: 100%;
+	width: 100%;
+}
+
+
+
+/***********************************************
+FOOD
+***********************************************/
+
+.BodyImageFood {
+	background-image: url("Images/Senior.jpg");
+	height: 900px;
+	background-size: cover;
+	background-position: center;
+	
+}
+
+.food {
+	margin-top: 5em;
+	font-size: 2em;
+	color: yellow;
+}
+
+
+
+/***********************************************
+DRINK
+***********************************************/
+
+.BodyImageDrink {
+	background-image: url("Images/Senior1.jpg");
+	height: 900px;
+	background-size: cover;
+	background-position: center;
+}
+	
+.drink {
+	font-size: 1.1em;
+	color: yellow;
+	margin-top: 4em;
+
+
+}
+
+#bright {
+	color: blue;
+}
+
+.MainBodyFood {
+	background-color: black;
+}
+
+/***********************************************
+GALLERY
+***********************************************/
+
+/*.Images {
+	margin: 2em 0;
+}*/
+
+.gallery {
+	height: 100%;
+	width: 100%;
+	border: 5px black solid;
+	margin: 1em;
+}
+
+
+
+
+
+
+

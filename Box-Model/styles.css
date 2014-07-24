@@ -1,0 +1,57 @@
+
+div {
+	max-width: 100%;
+}
+
+.box {
+	background-color: red;
+	width: 100px;
+	padding: 10px;
+	border: solid 3px black;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -37px;
+	margin-left: -63px;
+}
+
+.ancestor {
+	background: url(http://www.globalinksabroad.org/upload/barcelona-spain-low.jpg);
+	background-size: cover;
+	position: relative;
+	height: 500px;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+}
+
+.button {
+	background: orange;
+	display: inline-block;;
+
+}
+
+.anchors {
+}
+
+.back {
+	right: 300px;
+	top: 50px;
+}
+
+footer {
+	border-top: solid black 3px;
+	background-color: red;
+	height: 100px;
+	text-align: center;
+}
+
+
+
+

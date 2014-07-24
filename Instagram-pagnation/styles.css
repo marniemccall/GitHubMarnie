@@ -1,0 +1,32 @@
+.photo {
+	display: block;
+}
+
+.photo img {
+	max-width: 100%;
+}
+
+.profile-pic {
+	position: absolute;
+	height: 50px;
+	bottom: 0;
+	left: 0;
+}
+
+h1 {
+	text-align: center;
+}
+
+body {
+	background: red;
+}
+
+a {
+	border: 1px solid black;
+}
+
+p {
+	position: relative;
+	top: 20px;
+	right: 20px;
+}

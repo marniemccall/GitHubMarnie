@@ -1,0 +1,49 @@
+h1 {
+	color:#57C775;
+	font-family: 'Dosis', 'sans-serif';
+	font-size:40px;
+	text-align: center;
+}
+
+.me {
+	height:250px;
+	width:250px;
+	border-radius:100%;
+	float: left;
+}
+
+header {
+	height:300px;
+}
+
+h1 {
+	line-height: 250px;
+}
+
+body {
+	background-image: url("../images/road.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat:no-repeat;
+	font-size: 20px
+}
+
+.page {
+	background-color: rgba(0,0,0,0.5);
+	width: 900px;
+	margin: 0px auto 0px auto;
+	padding: 30px;
+}
+
+.resume {
+	color:white;
+}
+
+p {
+	text-align: center;
+	color:#cc67ce;
+}
+
+#heart {
+	color:red;
+}
